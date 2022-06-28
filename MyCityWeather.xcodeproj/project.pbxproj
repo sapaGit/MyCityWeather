@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A0727738286ACAF000C1196F /* Weather1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0727738286ACAF000C1196F /* MyCityWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCityWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A072773B286ACAF000C1196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A072773D286ACAF000C1196F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A072773F286ACAF000C1196F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		A072772F286ACAF000C1196F = {
 			isa = PBXGroup;
 			children = (
-				A072773A286ACAF000C1196F /* Weather1 */,
+				A072773A286ACAF000C1196F /* MyCityWeather */,
 				A0727739286ACAF000C1196F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		A0727739286ACAF000C1196F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0727738286ACAF000C1196F /* Weather1.app */,
+				A0727738286ACAF000C1196F /* MyCityWeather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A072773A286ACAF000C1196F /* Weather1 */ = {
+		A072773A286ACAF000C1196F /* MyCityWeather */ = {
 			isa = PBXGroup;
 			children = (
 				A072773B286ACAF000C1196F /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				A0727746286ACAF100C1196F /* LaunchScreen.storyboard */,
 				A0727749286ACAF100C1196F /* Info.plist */,
 			);
-			path = Weather1;
+			path = MyCityWeather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0727737286ACAF000C1196F /* Weather1 */ = {
+		A0727737286ACAF000C1196F /* MyCityWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A072774C286ACAF100C1196F /* Build configuration list for PBXNativeTarget "Weather1" */;
+			buildConfigurationList = A072774C286ACAF100C1196F /* Build configuration list for PBXNativeTarget "MyCityWeather" */;
 			buildPhases = (
 				A0727734286ACAF000C1196F /* Sources */,
 				A0727735286ACAF000C1196F /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Weather1;
+			name = MyCityWeather;
 			productName = Weather1;
-			productReference = A0727738286ACAF000C1196F /* Weather1.app */;
+			productReference = A0727738286ACAF000C1196F /* MyCityWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A0727733286ACAF000C1196F /* Build configuration list for PBXProject "Weather1" */;
+			buildConfigurationList = A0727733286ACAF000C1196F /* Build configuration list for PBXProject "MyCityWeather" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0727737286ACAF000C1196F /* Weather1 */,
+				A0727737286ACAF000C1196F /* MyCityWeather */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +291,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F978FGBWMJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather1/Info.plist;
+				INFOPLIST_FILE = MyCityWeather/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyCityWeather;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SergeyPavlov.Weather1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SergeyPavlov.MyCityWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,7 +320,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F978FGBWMJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather1/Info.plist;
+				INFOPLIST_FILE = MyCityWeather/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyCityWeather;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SergeyPavlov.Weather1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SergeyPavlov.MyCityWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0727733286ACAF000C1196F /* Build configuration list for PBXProject "Weather1" */ = {
+		A0727733286ACAF000C1196F /* Build configuration list for PBXProject "MyCityWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A072774A286ACAF100C1196F /* Debug */,
@@ -350,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A072774C286ACAF100C1196F /* Build configuration list for PBXNativeTarget "Weather1" */ = {
+		A072774C286ACAF100C1196F /* Build configuration list for PBXNativeTarget "MyCityWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A072774D286ACAF100C1196F /* Debug */,

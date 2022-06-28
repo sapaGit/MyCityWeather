@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Weather1
+//  MyCityWeather
 //
 //  Created by Sergey Pavlov on 28.06.2022.
 //
