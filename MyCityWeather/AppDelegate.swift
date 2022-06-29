@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Weather1
+//  MYCityWeather
 //
 //  Created by Sergey Pavlov on 28.06.2022.
 //
