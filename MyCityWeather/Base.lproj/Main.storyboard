@@ -19,17 +19,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gq8-Ih-9jv">
                                 <rect key="frame" x="20" y="64" width="374" height="269"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-Nw-gb2">
-                                        <rect key="frame" x="137.5" y="109" width="99" height="51"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-Nw-gb2">
+                                        <rect key="frame" x="135" y="93" width="104" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Yourk, USA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XWk-lT-erd">
+                                        <rect key="frame" x="75.5" y="152" width="223.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="XWk-lT-erd" firstAttribute="centerX" secondItem="YJQ-Nw-gb2" secondAttribute="centerX" id="30q-Bq-uee"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XWk-lT-erd" secondAttribute="trailing" id="4IB-Vp-rdT"/>
+                                    <constraint firstItem="XWk-lT-erd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gq8-Ih-9jv" secondAttribute="leading" id="7cK-zU-ouO"/>
                                     <constraint firstItem="YJQ-Nw-gb2" firstAttribute="centerX" secondItem="gq8-Ih-9jv" secondAttribute="centerX" id="BfL-ij-X4R"/>
-                                    <constraint firstItem="YJQ-Nw-gb2" firstAttribute="centerY" secondItem="gq8-Ih-9jv" secondAttribute="centerY" id="fK2-le-WzQ"/>
+                                    <constraint firstItem="XWk-lT-erd" firstAttribute="top" secondItem="YJQ-Nw-gb2" secondAttribute="bottom" constant="8" id="BpX-vI-qxg"/>
+                                    <constraint firstItem="YJQ-Nw-gb2" firstAttribute="centerY" secondItem="gq8-Ih-9jv" secondAttribute="centerY" constant="-16" id="fK2-le-WzQ"/>
                                 </constraints>
                             </view>
                         </subviews>
