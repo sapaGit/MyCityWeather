@@ -22,7 +22,6 @@ struct Weather: Decodable {
             case tempMin = "temp_min"
             case tempMax = "temp_max"
             case temp, pressure, humidity
-        }
         
     }
 }

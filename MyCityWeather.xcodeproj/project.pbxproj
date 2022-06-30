@@ -13,8 +13,6 @@
 		A0727743286ACAF000C1196F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0727741286ACAF000C1196F /* Main.storyboard */; };
 		A0727745286ACAF100C1196F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0727744286ACAF100C1196F /* Assets.xcassets */; };
 		A0727748286ACAF100C1196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0727746286ACAF100C1196F /* LaunchScreen.storyboard */; };
-		A0CFAD00286C596D00186730 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFACFF286C596D00186730 /* NetworkController.swift */; };
-		A0CFAD02286C5A4100186730 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFAD01286C5A4100186730 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		A0727744286ACAF100C1196F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0727747286ACAF100C1196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0727749286ACAF100C1196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0CFACFF286C596D00186730 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		A0CFAD01286C5A4100186730 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +58,6 @@
 			children = (
 				A072773B286ACAF000C1196F /* AppDelegate.swift */,
 				A072773D286ACAF000C1196F /* SceneDelegate.swift */,
-				A0CFACFF286C596D00186730 /* NetworkController.swift */,
-				A0CFAD01286C5A4100186730 /* Weather.swift */,
 				A072773F286ACAF000C1196F /* ViewController.swift */,
 				A0727741286ACAF000C1196F /* Main.storyboard */,
 				A0727744286ACAF100C1196F /* Assets.xcassets */,
@@ -144,11 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CFAD00286C596D00186730 /* NetworkController.swift in Sources */,
 				A0727740286ACAF000C1196F /* ViewController.swift in Sources */,
 				A072773C286ACAF000C1196F /* AppDelegate.swift in Sources */,
 				A072773E286ACAF000C1196F /* SceneDelegate.swift in Sources */,
-				A0CFAD02286C5A4100186730 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
