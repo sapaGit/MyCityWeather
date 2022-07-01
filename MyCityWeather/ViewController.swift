@@ -6,18 +6,38 @@
 //
 
 import UIKit
+import CoreLocation
 
 
 class ViewController: UIViewController {
     
-    
-//    request = "https://api.openweathermap.org/data/2.5/weather?lat=37.33233141&lon=-122.0312186&units=metric&appid=9dc585ecc48e43d2d2420f0b3d434e7d"
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        startLocationManager()
     
     }
-  
+    func startLocationManager() {
+       //creating request
+        locationManager.requestWhenInUseAuthorization()
+        
+        //Checking user permission
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            
+                //accuracy of coordinates
+            locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+            locationManager.pausesLocationUpdatesAutomatically = false
+            locationManager.startUpdatingLocation()
+        }
+    }
+}
 
+extension ViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let lastLocation = locations.last {
+            print(lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
+        }
+    }
 }
