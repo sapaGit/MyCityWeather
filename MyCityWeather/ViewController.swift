@@ -35,25 +35,27 @@ class ViewController: UIViewController {
     
     
     func updateWeatherInfo(latitude: Double, longitude: Double) {
-        let session = URLSession.shared
-        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude.description)&lon=\(longitude.description)&units=metric&appid=9dc585ecc48e43d2d2420f0b3d434e7d")!
-        let task = session.dataTask(with: url) { data, response, error in
+        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?lat=\(latitude.description)&lon=\(longitude.description)&units=metric&appid=9dc585ecc48e43d2d2420f0b3d434e7d")!
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
-                print("DataTask error: \(error?.localizedDescription)")
+                print("DataTask error: \(error!.localizedDescription)")
                 return
             }
             do {
-                
+                self.weatherData = try JSONDecoder().decode(WeatherData.self, from: data!)
+                print(self.weatherData)
             } catch {
-                print(error.localizedDescription)
+                print(error)
             }
         }
+        task.resume()
     }
 }
 
 extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let lastLocation = locations.last {
+            updateWeatherInfo(latitude: lastLocation.coordinate.latitude, longitude: lastLocation.coordinate.longitude)
             print(lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
         }
     }
