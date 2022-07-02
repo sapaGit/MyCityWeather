@@ -32,10 +32,12 @@ class ViewController: UIViewController {
             locationManager.startUpdatingLocation()
         }
     }
-    
+    func updateView() {
+        
+    }
     
     func updateWeatherInfo(latitude: Double, longitude: Double) {
-        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?lat=\(latitude.description)&lon=\(longitude.description)&units=metric&appid=9dc585ecc48e43d2d2420f0b3d434e7d")!
+        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&units=metric&appid=9dc585ecc48e43d2d2420f0b3d434e7d")!
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
                 print("DataTask error: \(error!.localizedDescription)")
@@ -43,6 +45,9 @@ class ViewController: UIViewController {
             }
             do {
                 self.weatherData = try JSONDecoder().decode(WeatherData.self, from: data!)
+                DispatchQueue.main.async {
+                    self.updateView()
+                }
                 print(self.weatherData)
             } catch {
                 print(error)
