@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0367D1D287030AE007B1482 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0367D1C287030AE007B1482 /* DataModels.swift */; };
 		A072773C286ACAF000C1196F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072773B286ACAF000C1196F /* AppDelegate.swift */; };
 		A072773E286ACAF000C1196F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072773D286ACAF000C1196F /* SceneDelegate.swift */; };
 		A0727740286ACAF000C1196F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072773F286ACAF000C1196F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0367D1C287030AE007B1482 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		A0727738286ACAF000C1196F /* MyCityWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCityWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A072773B286ACAF000C1196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A072773D286ACAF000C1196F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A072773B286ACAF000C1196F /* AppDelegate.swift */,
 				A072773D286ACAF000C1196F /* SceneDelegate.swift */,
 				A072773F286ACAF000C1196F /* ViewController.swift */,
+				A0367D1C287030AE007B1482 /* DataModels.swift */,
 				A0727741286ACAF000C1196F /* Main.storyboard */,
 				A0727744286ACAF100C1196F /* Assets.xcassets */,
 				A0727746286ACAF100C1196F /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0727740286ACAF000C1196F /* ViewController.swift in Sources */,
+				A0367D1D287030AE007B1482 /* DataModels.swift in Sources */,
 				A072773C286ACAF000C1196F /* AppDelegate.swift in Sources */,
 				A072773E286ACAF000C1196F /* SceneDelegate.swift in Sources */,
 			);

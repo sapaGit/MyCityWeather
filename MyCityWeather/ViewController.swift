@@ -12,7 +12,7 @@ import CoreLocation
 class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
-    
+    var weatherData = WeatherData()
     override func viewDidLoad() {
         super.viewDidLoad()
         startLocationManager()
@@ -30,6 +30,23 @@ class ViewController: UIViewController {
             locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
             locationManager.pausesLocationUpdatesAutomatically = false
             locationManager.startUpdatingLocation()
+        }
+    }
+    
+    
+    func updateWeatherInfo(latitude: Double, longitude: Double) {
+        let session = URLSession.shared
+        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude.description)&lon=\(longitude.description)&units=metric&appid=9dc585ecc48e43d2d2420f0b3d434e7d")!
+        let task = session.dataTask(with: url) { data, response, error in
+            guard error == nil else {
+                print("DataTask error: \(error?.localizedDescription)")
+                return
+            }
+            do {
+                
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
 }
