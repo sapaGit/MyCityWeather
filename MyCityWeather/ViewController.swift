@@ -38,7 +38,9 @@ class ViewController: UIViewController {
         }
     }
     func updateView() {
-        
+        cityLabel.text = weatherData.name
+        tempLabel.text = "\(Int(weatherData.main.temp))°C"
+      
     }
     
     func updateWeatherInfo(latitude: Double, longitude: Double) {
