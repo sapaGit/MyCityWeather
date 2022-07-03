@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     var weatherData = WeatherData()
+    
+    @IBOutlet var cityLabel: UILabel!
+    @IBOutlet var tempLabel: UILabel!
+    @IBOutlet var conditionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startLocationManager()

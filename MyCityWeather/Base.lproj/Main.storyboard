@@ -17,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_weather" translatesAutoresizingMaskIntoConstraints="NO" id="8z5-3X-ZC2">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb6-I7-bQc">
-                                <rect key="frame" x="133.5" y="92" width="147" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb6-I7-bQc">
+                                <rect key="frame" x="98" y="92" width="218" height="69"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzb-Wl-UgC">
-                                <rect key="frame" x="182.5" y="188" width="49" height="23"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25°С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzb-Wl-UgC">
+                                <rect key="frame" x="171.5" y="188" width="71" height="38"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEu-gP-fbl">
-                                <rect key="frame" x="182" y="246" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEu-gP-fbl">
+                                <rect key="frame" x="182" y="246" width="40" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -42,16 +42,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8z5-3X-ZC2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AVh-Rd-UPn"/>
+                            <constraint firstItem="8z5-3X-ZC2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BWH-u3-IDq"/>
                             <constraint firstItem="Sb6-I7-bQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D7P-Ku-2W6"/>
                             <constraint firstItem="Wzb-Wl-UgC" firstAttribute="centerX" secondItem="Sb6-I7-bQc" secondAttribute="centerX" id="LJ8-sn-Sra"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="8z5-3X-ZC2" secondAttribute="bottom" id="NHz-jH-Qsz"/>
-                            <constraint firstItem="8z5-3X-ZC2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Onl-KE-iOi"/>
+                            <constraint firstAttribute="trailing" secondItem="8z5-3X-ZC2" secondAttribute="trailing" id="a5f-SE-qe9"/>
                             <constraint firstItem="Sb6-I7-bQc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="cfa-uI-0XX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8z5-3X-ZC2" secondAttribute="trailing" id="kiy-3D-bph"/>
                             <constraint firstItem="Wzb-Wl-UgC" firstAttribute="top" secondItem="Sb6-I7-bQc" secondAttribute="bottom" constant="27" id="s3L-eo-w9b"/>
+                            <constraint firstAttribute="bottom" secondItem="8z5-3X-ZC2" secondAttribute="bottom" id="u2w-cA-Ls6"/>
+                            <constraint firstItem="8z5-3X-ZC2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="x3Z-QB-oo6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Sb6-I7-bQc" id="52i-WG-0Yj"/>
+                        <outlet property="conditionLabel" destination="lEu-gP-fbl" id="l53-vQ-plv"/>
+                        <outlet property="tempLabel" destination="Wzb-Wl-UgC" id="loy-PD-zg7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
