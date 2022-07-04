@@ -31,20 +31,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEu-gP-fbl">
-                                <rect key="frame" x="182" y="246" width="40" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEu-gP-fbl">
+                                <rect key="frame" x="187" y="246" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aw3-M0-jdO">
+                                <rect key="frame" x="134" y="284" width="146" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="BRM-rG-Aqw"/>
+                                    <constraint firstAttribute="height" constant="128" id="EdL-Md-1Ro"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lEu-gP-fbl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="574-Pu-wOG"/>
                             <constraint firstItem="8z5-3X-ZC2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BWH-u3-IDq"/>
                             <constraint firstItem="Sb6-I7-bQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D7P-Ku-2W6"/>
+                            <constraint firstItem="aw3-M0-jdO" firstAttribute="top" secondItem="lEu-gP-fbl" secondAttribute="bottom" constant="17" id="J2c-L5-dVV"/>
+                            <constraint firstItem="aw3-M0-jdO" firstAttribute="centerX" secondItem="lEu-gP-fbl" secondAttribute="centerX" id="KoX-XS-eyV"/>
                             <constraint firstItem="Wzb-Wl-UgC" firstAttribute="centerX" secondItem="Sb6-I7-bQc" secondAttribute="centerX" id="LJ8-sn-Sra"/>
+                            <constraint firstItem="lEu-gP-fbl" firstAttribute="top" secondItem="Wzb-Wl-UgC" secondAttribute="bottom" constant="20" id="XMh-fA-ChN"/>
                             <constraint firstAttribute="trailing" secondItem="8z5-3X-ZC2" secondAttribute="trailing" id="a5f-SE-qe9"/>
                             <constraint firstItem="Sb6-I7-bQc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="cfa-uI-0XX"/>
                             <constraint firstItem="Wzb-Wl-UgC" firstAttribute="top" secondItem="Sb6-I7-bQc" secondAttribute="bottom" constant="27" id="s3L-eo-w9b"/>
@@ -54,6 +64,7 @@
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="Sb6-I7-bQc" id="52i-WG-0Yj"/>
+                        <outlet property="conditionImage" destination="aw3-M0-jdO" id="KNJ-E8-y6L"/>
                         <outlet property="conditionLabel" destination="lEu-gP-fbl" id="l53-vQ-plv"/>
                         <outlet property="tempLabel" destination="Wzb-Wl-UgC" id="loy-PD-zg7"/>
                     </connections>

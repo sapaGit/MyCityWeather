@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var tempLabel: UILabel!
     @IBOutlet var conditionLabel: UILabel!
+    @IBOutlet var conditionImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,8 @@ class ViewController: UIViewController {
     func updateView() {
         cityLabel.text = weatherData.name
         tempLabel.text = "\(Int(weatherData.main.temp))°C"
-      
+        conditionLabel.text = weatherData.weather[0].main
+        conditionImage.image = UIImage(named: weatherData.weather[0].icon)
     }
     
     func updateWeatherInfo(latitude: Double, longitude: Double) {
